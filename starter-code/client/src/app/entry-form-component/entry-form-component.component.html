@@ -1,0 +1,15 @@
+<p>
+  entry-form-component works!
+</p>
+<form (ngSubmit)="create(title,content)">
+  <p>
+    Add Entry
+  </p>
+  <label for="title"> Title </label><br>
+  <input type="text" name="title" [(ngModel)]="title"/><br>
+  <label for="content" >Content</label><br>
+  <textarea name="content" [(ngModel)]="content"></textarea><br>
+  <button>Submit</button>
+</form>
+
+<a [routerLink]="['']">Go Back! </a>
